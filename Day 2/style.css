@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px;
+}
+
+.profile-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 380px;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-8px);
+}
+
+.profile-image img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #667eea;
+    margin-bottom: 18px;
+}
+
+h1 {
+    color: #222;
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+h3 {
+    color: #667eea;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.bio {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.skills h2 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 25px;
+}
+
+.skill-list span {
+    background: #eef0ff;
+    color: #5264cc;
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skill-list span:hover {
+    background: #667eea;
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #667eea;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #243b55;
+    transform: scale(1.1);
+}
+
+.contact-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 13px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px rgba(102,126,234,0.4);
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 480px) {
+    .profile-card {
+        padding: 28px 18px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+}
