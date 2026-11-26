@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: arial,sans-serif;
+    background-color: #f4f6fb;
+    color: #333;
+}
+header{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+    padding: 25px;
+    text-align: center;
+}
+header h1{
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+nav a:hover {
+    color:#ffdd57;
+}
+main{
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 0 15px;
+}
+
+section{
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+section h2{
+    color: #667eea;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+section p{
+    line-height: 1.7;
+    font-size: 16px;
+}
+form label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+form input,
+form textarea{
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102,126,234,0.3);
+}
+button {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+footer{
+    background-color: #202b45;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+@media(max-width:600px)
+{
+    header h1{
+        font-size: 24px;
+    }
+    nav a{
+        display: inline-block;
+        margin: 8px;
+    }
+    section{
+        padding: 20px;
+    }
+}
